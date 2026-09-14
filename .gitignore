@@ -11,3 +11,5 @@ htmlcov/
 .idea/
 .vscode/
 *.swp
+docs/
+

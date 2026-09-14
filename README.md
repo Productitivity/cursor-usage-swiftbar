@@ -2,6 +2,10 @@
 
 macOS [SwiftBar](https://swiftbar.app/) plugin that shows remaining Cursor Models usage in the menu bar.
 
+![Menu bar title](assets/title.png)
+
+![Plugin dropdown](assets/menu.png)
+
 The plugin reads the local Cursor session from `state.vscdb` at runtime, calls unofficial `api2.cursor.sh` endpoints, and never stores, logs, or prints the access token. Conversation content is not read.
 
 This API is unofficial and can change. The plugin shows an error instead of a stale value when the session or payload is unusable.
@@ -11,7 +15,8 @@ This API is unofficial and can change. The plugin shows an error instead of a st
 ```text
 cursor-usage.1m.py   # SwiftBar plugin (copy this file)
 tests/               # unit tests, no live Cursor session required
-docs/PROJECT_STATUS.md
+assets/title.png     # menu-bar title
+assets/menu.png      # dropdown
 AGENTS.md
 ```
 
